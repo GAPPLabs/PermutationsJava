@@ -1,2 +1,5 @@
 .idea/
 Permutation.iml
+production/
+/src/META-INF/
+src/META-INF/MANIFEST.MF
