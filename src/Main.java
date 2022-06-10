@@ -18,6 +18,7 @@ public class Main {
 //        integerArrayList.add(11);
         //Uso de clase propia para poder evaluar las permutaciones de los objetos
         ArrayList<Person> personArrayList = new ArrayList<>();
+        Collections.shuffle(personArrayList);
         personArrayList.add(new Person("Juan", 22));
         personArrayList.add(new Person("Pablo", 19));
         personArrayList.add(new Person("Tasha", 23));

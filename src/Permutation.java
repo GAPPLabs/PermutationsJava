@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Permutation {
+public class Permutation{
     //Se usan métodos estáticos porque no se considera necesario crear una instancia de Permutation para iterar
     //Su implementación es genérica para que pueda ser usado con cualqueir tipo de listas
     //Su utilidad es similar al framework Collections, por lo que se sigue la misma organización
@@ -8,9 +8,9 @@ public class Permutation {
     //Método que se llama para comenzar las permutaciones
     public static <T extends Comparable<? super T>> ArrayList<Stack<T>> permute(ArrayList<T> originalList) {
         //Se inicializan los arreglos necesarios para el almacenamiento y manipulación de las permutaciones
-        LinkedList<T> linkedList = new LinkedList<>((ArrayList<T>) originalList.clone());
-        Stack<T> stack = new Stack<>(); //La pila se usa para almacenar la permutación actual de manera temporal
-        ArrayList<Stack<T>> permutations = new ArrayList<>();//Se usa para almacenar todas las permutaciones
+        LinkedList<T> linkedList = new LinkedList<T>((ArrayList<T>) originalList.clone());
+        Stack<T> stack = new Stack<T>(); //La pila se usa para almacenar la permutación actual de manera temporal
+        ArrayList<Stack<T>> permutations = new ArrayList<Stack<T>>();//Se usa para almacenar todas las permutaciones
         //Se llama al método que emplea la recursividad para generar las permutaciones
         permute(stack, linkedList, permutations);
         //Retorna el arreglo con todas las permutaciones almacenadas
