@@ -3,6 +3,7 @@ public class Person implements Comparable<Person>{
     int edad;
 
     public Person(String nombre, int edad) {
+//        super(edad);
         this.nombre = nombre;
         this.edad = edad;
     }
